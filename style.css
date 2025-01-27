@@ -1,0 +1,503 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home {
+    background: #4CAF50;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+#home h1 {
+    font-size: 2.5rem;
+}
+#home p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    width: 60%;
+    font-size: 18px;
+    color: #555;
+}
+
+.about-image {
+    width: 30%;
+    text-align: center;
+}
+.about-image img {
+    width: 200%;       /* Makes the image responsive (takes up full width of its container) */
+    max-width: 100px;  /* Sets a max width to prevent the image from becoming too large */
+    height: 50%;      /* Maintains the image's aspect ratio */
+    border-radius: 70%;/* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 90%;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .about-achievements {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+/* Skills Section */
+#skills {
+    background: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+.skill-set {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill {
+    width: 40%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.skill h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+/* Add some extra styling for skills section */
+#skills {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 28%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+}
+
+/* Skill bars for different skill levels */
+.html {
+    width: 90%;
+    background-color: #e34c26;
+}
+
+.css {
+    width: 85%;
+    background-color: #264de4;
+}
+
+.js {
+    width: 80%;
+    background-color: #f7df1e;
+}
+
+.react {
+    width: 70%;
+    background-color: #61dafb;
+}
+
+.python {
+    width: 75%;
+    background-color: #306998;
+}
+
+.git {
+    width: 80%;
+    background-color: #f1502f;
+}
+
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* Add new skill bar colors for the new skills */
+.bootstrap {
+    width: 85%;
+    background-color: #563d7c;
+}
+
+.php {
+    width: 70%;
+    background-color: #4f5b93;
+}
+
+.mysql {
+    width: 75%;
+    background-color: #00618b;
+}
+
+.data-analysis {
+    width: 80%;
+    background-color: #f39c12;
+}
+
+.data-visualization {
+    width: 75%;
+    background-color: #27ae60;
+}
+
+.ai {
+    width: 70%;
+    background-color: #8e44ad;
+}
+
+/* Icons style adjustments for better layout */
+.skill-card img {
+    width: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.skill-card:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Projects Section */
+#projects {
+    padding: 40px 0;
+    text-align: center;
+    background: #fff;
+}
+.project {
+    margin-bottom: 20px;
+}
+
+#projects {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 40%;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.project-details {
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+.project-details h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-details p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .project-details {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Contact Section */
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+ 
+
+.contact-details {
+    width: 40%;
+}
+
+.contact-details h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-icon:hover {
+    background-color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    font-size: 16px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    font-size: 16px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-details {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+
+
+
+}
+
