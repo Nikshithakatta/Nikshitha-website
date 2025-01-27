@@ -82,11 +82,11 @@ nav {
     text-align: center;
 }
 .about-image img {
-    width: 200%;       /* Makes the image responsive (takes up full width of its container) */
-    max-width: 100px;  /* Sets a max width to prevent the image from becoming too large */
-    height: 50%;      /* Maintains the image's aspect ratio */
-    border-radius: 70%;/* Makes the image circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    width: 200%;       
+    max-width: 100px;  
+    height: 50%;      
+    border-radius: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Mobile responsiveness */
@@ -216,14 +216,13 @@ nav {
     background-color: #f7df1e;
 }
 
-.react {
-    width: 70%;
-    background-color: #61dafb;
-}
-
 .python {
     width: 75%;
     background-color: #306998;
+}
+.java{
+    width: 75%;
+    background-color: #8e44ad;
 }
 
 .git {
