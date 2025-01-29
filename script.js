@@ -22,17 +22,18 @@ window.addEventListener("scroll", function() {
         animateCounter("clients-worked", 30); // Example: 30 clients worked with
     }
 });
-// Simple form validation and alert on form submission
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent the form from submitting
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    if (name && email && message) {
-        alert(`Thank you for your message, ${name}!`);
-        // Here you can add code to actually send the form data (e.g., using fetch or Ajax)
-    } else {
-        alert('Please fill in all fields.');
-    }
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
 });
+
+// Mobile Menu Toggle
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector(".nav-links").classList.toggle("show");
+});
+
